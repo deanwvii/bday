@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cute Page</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ffd6e7, #fff0f5);
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(255, 182, 193, 0.5);
+            z-index: 1;
+        }
+
+        h1 {
+            color: #ff69b4;
+        }
+
+        p {
+            color: #666;
+        }
+
+        button {
+            background: #ffb6c1;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 20px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ff69b4;
+        }
+
+        .heart {
+            position: absolute;
+            color: pink;
+            font-size: 24px;
+            animation: float 6s infinite ease-in;
+        }
+
+        @keyframes float {
+            from {
+                transform: translateY(100vh);
+                opacity: 1;
+            }
+            to {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+        }
+
+        .heart:nth-child(1) { left: 10%; animation-delay: 0s; }
+        .heart:nth-child(2) { left: 25%; animation-delay: 1s; }
+        .heart:nth-child(3) { left: 50%; animation-delay: 2s; }
+        .heart:nth-child(4) { left: 75%; animation-delay: 3s; }
+        .heart:nth-child(5) { left: 90%; animation-delay: 4s; }
+    </style>
+</head>
+<body>
+
+    <div class="heart">💖</div>
+    <div class="heart">💕</div>
+    <div class="heart">💗</div>
+    <div class="heart">💞</div>
+    <div class="heart">💓</div>
+
+    <div class="card">
+        <h1>🌸 hello bebi! 🌸</h1>
+        <p>happy birthday my handsome baby^^ 💕</p>
+        <button onclick="window.location.href='mpage.html'">
+            click this bebi :P
+        </button>
+    </div>
+
+</body>
+</html>
